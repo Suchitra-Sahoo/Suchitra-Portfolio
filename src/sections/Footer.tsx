@@ -3,20 +3,12 @@ import { ArrowUpRight } from "lucide-react";
 const footerLinks = [
   {
     title: "GitHub",
-    href: "https://github.com/tanishijanweja",
+    href: "https://github.com/Suchitra-Sahoo",
   },
   {
     title: "LinkedIn",
-    href: "https://www.linkedin.com/in/tanishi-janweja/",
-  },
-  {
-    title: "X",
-    href: "https://x.com/tanishijanweja",
-  },
-  {
-    title: "YouTube",
-    href: "https://www.youtube.com/@TanishiJanweja",
-  },
+    href: "https://www.linkedin.com/in/suchitra-sahoo-a60a05257",
+  }
 ];
 
 export const Footer = () => {

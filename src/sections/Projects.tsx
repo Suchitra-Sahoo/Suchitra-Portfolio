@@ -1,26 +1,43 @@
-import vibe from "@/assets/images/vibe.png";
+import cookbookImage from "@/assets/images/cookbook.png";
+import campusfind from "@/assets/images/campusfind.png";
 import Image from "next/image";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import { ArrowUpRight } from "lucide-react";
-import grainImage from "@/assets/images/grain.jpg";
 import { Github } from "lucide-react";
 import { SectionHeader } from "@/components/SectionHeader";
 import { Card } from "@/components/Card";
 
 const portfolioProjects = [
   {
-    name: "CookBook",
-    year: "SEP 2025",
-    title: "AI-Powered Web App Builder",
-    results: [
-      { title: "AI Coding Assistant for Web Apps" },
-      { title: "Secure Auth & Billing" },
-      { title: "Dynamic UI Previews" },
-    ],
-    link: "https://vibe-ucq3.vercel.app/",
-    image: vibe,
-  },
+  name: "CookBook",
+  year: "AUG 2025",
+  title: "Recipe Sharing Platform",
+  results: [
+    { title: "Full-stack web app using React.js, Node.js, Express.js & MongoDB" },
+    { title: "Browse, search, post, and interact with recipes" },
+    { title: "Secure JWT-based authentication & user profile management" },
+    { title: "Responsive UI with Tailwind CSS including image uploads & comments" },
+  ],
+  link: "https://cook-book-flax.vercel.app/",
+  image: cookbookImage,
+},
+
+{
+  name: "CampusFind",
+  year: "SEP 2025",
+  title: "Smart Lost & Found System",
+  results: [
+    { title: "Full-stack web app using React.js, Node.js, Express.js & MongoDB" },
+    { title: "Search and report lost items efficiently across campus" },
+    { title: "Secure JWT-based authentication & user profile management" },
+    { title: "Responsive UI with Tailwind CSS including image uploads & item tracking" },
+  ],
+  link: "https://github.com/Suchitra-Sahoo/Smart-Lost-and-Found-System",
+  image: campusfind,
+}
+
 ];
+
 
 export const ProjectsSection = () => {
   return (
@@ -71,7 +88,7 @@ export const ProjectsSection = () => {
                       </button>
                     </a>
                     <a
-                      href={`https://github.com/tanishijanweja/vibe`}
+                      href={`https://github.com/Suchitra-Sahoo/CookBook`}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -86,7 +103,7 @@ export const ProjectsSection = () => {
                   <Image
                     src={project.image}
                     alt={project.title}
-                    className="mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none"
+                    className="rounded-t-2xl mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none"
                   />
                 </div>
               </div>
