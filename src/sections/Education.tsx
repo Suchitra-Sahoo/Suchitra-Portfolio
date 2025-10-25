@@ -18,7 +18,7 @@ const education = [
   {
     institution: "St. Paul’s School",
     degree: "Class X - 95.4% | Class XII - 95.8%",
-    duration: "Completed in 2022",
+    duration: "Completed in 2021",
     location: "New Delhi, India",
     logo: sps,
     whiteBg: true,
