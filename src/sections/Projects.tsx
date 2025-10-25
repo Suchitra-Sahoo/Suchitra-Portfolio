@@ -1,5 +1,5 @@
-import cookbookImage from "@/assets/images/cookbook.png";
-import campusfind from "@/assets/images/campusfind.png";
+import cookbookImage from "@/assets/images/cookbook1.png";
+import campusfind from "@/assets/images/campusfind1.png";
 import Image from "next/image";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import { ArrowUpRight } from "lucide-react";
@@ -9,37 +9,63 @@ import { Card } from "@/components/Card";
 
 const portfolioProjects = [
   {
-  name: "CookBook",
-  year: "AUG 2025",
-  title: "Recipe Sharing Platform",
-  results: [
-    { title: "Built a full-stack platform using React.js, Node.js, Express.js & MongoDB" },
-      { title: "Implemented advanced search, filtering, and categorization for easy recipe discovery" },
-      { title: "Users can post recipes with images, comment, and rate other recipes" },
-      { title: "Secure JWT-based authentication with personalized user profiles" },
-      { title: "Responsive UI using Tailwind CSS optimized for mobile and desktop" },
-  ],
-  link: "https://cook-book-flax.vercel.app/",
-  image: cookbookImage,
-},
-
-{
-  name: "CampusFind",
-  year: "SEP 2025",
-  title: "Smart Lost & Found System",
-  results: [
-    { title: "Developed a campus-wide lost & found system using React.js, Node.js, Express.js & MongoDB" },
-      { title: "Efficient reporting and searching of lost items by category and location" },
+    name: "CookBook",
+    year: "AUG 2025",
+    title: "Recipe Sharing Platform",
+    results: [
+      {
+        title:
+          "Built a full-stack platform using React.js, Node.js, Express.js & MongoDB",
+      },
+      {
+        title:
+          "Implemented advanced search, filtering, and categorization for easy recipe discovery",
+      },
+      {
+        title:
+          "Users can post recipes with images, comment, and rate other recipes",
+      },
+      {
+        title:
+          "Secure JWT-based authentication with personalized user profiles",
+      },
+      {
+        title:
+          "Responsive UI using Tailwind CSS optimized for mobile and desktop",
+      },
+    ],
+    link: "https://cook-book-flax.vercel.app/",
+    image: cookbookImage,
+    github: "https://github.com/Suchitra-Sahoo/CookBook",
+  },
+  {
+    name: "CampusFind",
+    year: "SEP 2025",
+    title: "Smart Lost & Found System",
+    results: [
+      {
+        title:
+          "Developed a campus-wide lost & found system using React.js, Node.js, Express.js & MongoDB",
+      },
+      {
+        title:
+          "Efficient reporting and searching of lost items by category and location",
+      },
       { title: "Real-time item tracking for easy identification" },
-      { title: "Secure authentication and profile management for students and staff" },
-      { title: "Mobile-first responsive design with Tailwind CSS for fast access across devices" },
-  ],
-  link: "https://github.com/Suchitra-Sahoo/Smart-Lost-and-Found-System",
-  image: campusfind,
-}
-
+      {
+        title:
+          "Secure authentication and profile management for students and staff",
+      },
+      {
+        title:
+          "Mobile-first responsive design with Tailwind CSS for fast access across devices",
+      },
+    ],
+    link: "https://github.com/Suchitra-Sahoo/Smart-Lost-and-Found-System",
+    image: campusfind,
+    github: "https://github.com/Suchitra-Sahoo/Smart-Lost-and-Found-System",
+  },
 ];
-
 
 export const ProjectsSection = () => {
   return (
@@ -50,13 +76,15 @@ export const ProjectsSection = () => {
           title="Featured Projects"
           description="Building clean, functional and creative web experiences."
         />
+
         <div className="mt-10 md:mt-20 flex flex-col gap-20">
           {portfolioProjects.map((project) => (
             <Card
               key={project.title}
               className="px-8 pt-8 pb-0 md:pt-12 md:px-10 lg:pt-16 lg:px-20"
             >
-              <div className="lg:grid lg:grid-cols-2 lg:gap-16">
+              <div className="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
+                {/* Project Details */}
                 <div className="lg:pb-16">
                   <div className="bg-gradient-to-r from-pink-300 to-pink-500 inline-flex gap-2 font-bold uppercase tracking-widest text-sm text-transparent bg-clip-text">
                     <span>{project.name}</span>
@@ -90,7 +118,7 @@ export const ProjectsSection = () => {
                       </button>
                     </a>
                     <a
-                      href={`https://github.com/Suchitra-Sahoo/CookBook`}
+                      href={project.github}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -101,11 +129,15 @@ export const ProjectsSection = () => {
                     </a>
                   </div>
                 </div>
-                <div className="relative">
+
+                {/* Project Image */}
+                <div className="relative w-full rounded-2xl overflow-hidden mt-8 md:mt-0">
                   <Image
                     src={project.image}
                     alt={project.title}
-                    className="rounded-t-2xl mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none"
+                    width={800}
+                    height={600}
+                    className="object-contain rounded-2xl w-full h-auto mb-4"
                   />
                 </div>
               </div>
