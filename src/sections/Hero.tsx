@@ -1,6 +1,7 @@
 import ArrowDown from "@/assets/icons/arrow-down.svg";
 import hand from "@/assets/images/hand.png";
 import { Github, Linkedin, X } from "lucide-react";
+import { PersonalityTape } from "./PersonalityTape";
 
 export const HeroSection = () => {
   return (
@@ -40,7 +41,9 @@ export const HeroSection = () => {
               alt="hand waving"
               className="w-5 h-5 bg-pink-200 mix-blend-darken"
             />
-            <span className="font-semibold">Let's Connect</span>
+            <span className="font-semibold cursor-pointer">
+               <a href="#contact">Let's Connect</a>
+            </span>
           </button>
         </div>
         <div className="flex justify-center space-x-6 py-4">
@@ -60,8 +63,11 @@ export const HeroSection = () => {
           >
             <Github size={28} />
           </a>
+        
         </div>
+          
       </div>
+      <PersonalityTape />
     </div>
   );
 };

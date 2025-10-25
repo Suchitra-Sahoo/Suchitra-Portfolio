@@ -2,10 +2,8 @@
 
 import { SectionHeader } from "@/components/SectionHeader";
 import { Card } from "@/components/Card";
-import { CardHeader } from "@/components/CardHeader";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
-import curious from "@/assets/images/curious.jpeg";
-import iit from "@/assets/images/iit.jpg"
+
 
 const experiences = [
   {

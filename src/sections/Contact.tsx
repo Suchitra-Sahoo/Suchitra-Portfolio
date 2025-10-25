@@ -3,7 +3,7 @@ import { ArrowUpRight } from "lucide-react";
 
 export const ContactSection = () => {
   return (
-    <div className="py-16 pt-12 lg:py-24 lg:pt-20">
+    <div id="contact" className="py-16 pt-12 lg:py-24 lg:pt-20">
       <div className="container">
         <Card className="py-8 px-10 text-center md:text-left">
           <div className="flex flex-col md:flex-row md:justify-between gap-8 md:gap-16 items-center">
