@@ -37,18 +37,13 @@ export const HeroSection = () => {
             </span>
             <ArrowDown className="size-4" />
           </button>
-          <button className="cursor-pointer inline-flex items-center gap-2 border border-pink-200 bg-pink-200 text-gray-900 h-12 px-6 rounded-xl">
+          <a
+            href="#contact"
+            className="inline-flex items-center gap-2 border border-pink-200 bg-pink-200 text-gray-900 h-12 px-6 rounded-xl cursor-pointer hover:bg-pink-300/80 transition-all"
+          >
             <MdWavingHand className="w-5 h-5 text-black" />
-            <span className="font-semibold ">
-              <a
-                href="#contact"
-                className="inline-flex items-center gap-2 border border-pink-200 bg-pink-200 text-gray-900 h-12 px-6 rounded-xl cursor-pointer hover:bg-pink-300/80 transition-all"
-              >
-                <MdWavingHand className="w-5 h-5 text-black" />
-                <span className="font-semibold">Let's Connect</span>
-              </a>
-            </span>
-          </button>
+            <span className="font-semibold">Let's Connect</span>
+          </a>
         </div>
 
         <div className="flex justify-center space-x-6 py-4">
