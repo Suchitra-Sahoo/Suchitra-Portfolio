@@ -40,7 +40,13 @@ export const HeroSection = () => {
           <button className="cursor-pointer inline-flex items-center gap-2 border border-pink-200 bg-pink-200 text-gray-900 h-12 px-6 rounded-xl">
             <MdWavingHand className="w-5 h-5 text-black" />
             <span className="font-semibold ">
-              <a href="#contact">Let's Connect</a>
+              <a
+                href="#contact"
+                className="inline-flex items-center gap-2 border border-pink-200 bg-pink-200 text-gray-900 h-12 px-6 rounded-xl cursor-pointer hover:bg-pink-300/80 transition-all"
+              >
+                <MdWavingHand className="w-5 h-5 text-black" />
+                <span className="font-semibold">Let's Connect</span>
+              </a>
             </span>
           </button>
         </div>
