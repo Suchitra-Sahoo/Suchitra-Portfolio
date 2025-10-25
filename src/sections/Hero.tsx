@@ -1,6 +1,7 @@
 import ArrowDown from "@/assets/icons/arrow-down.svg";
 import hand from "@/assets/images/hand.png";
 import { Github, Linkedin, X } from "lucide-react";
+import { MdWavingHand } from "react-icons/md";
 import { PersonalityTape } from "./PersonalityTape";
 
 export const HeroSection = () => {
@@ -25,7 +26,8 @@ export const HeroSection = () => {
         <div className="max-w-lg mx-auto">
           <p className="mt-4 text-center text-white/70 md:text-lg">
             I build web applications that are creative, user-friendly and
-            functional, bringing ideas to life with seamless digital experiences.
+            functional, bringing ideas to life with seamless digital
+            experiences.
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
@@ -35,17 +37,14 @@ export const HeroSection = () => {
             </span>
             <ArrowDown className="size-4" />
           </button>
-          <button className="inline-flex items-center gap-2 border border-pink-200 bg-pink-200 text-gray-900 h-12 px-6 rounded-xl">
-            <img
-              src={hand.src}
-              alt="hand waving"
-              className="w-5 h-5 bg-pink-200 mix-blend-darken"
-            />
-            <span className="font-semibold cursor-pointer">
-               <a href="#contact">Let's Connect</a>
+          <button className="cursor-pointer inline-flex items-center gap-2 border border-pink-200 bg-pink-200 text-gray-900 h-12 px-6 rounded-xl">
+            <MdWavingHand className="w-5 h-5 text-black" />
+            <span className="font-semibold ">
+              <a href="#contact">Let's Connect</a>
             </span>
           </button>
         </div>
+
         <div className="flex justify-center space-x-6 py-4">
           <a
             href={`https://www.linkedin.com/in/suchitra-sahoo-a60a05257/`}
@@ -63,9 +62,7 @@ export const HeroSection = () => {
           >
             <Github size={28} />
           </a>
-        
         </div>
-          
       </div>
       <PersonalityTape />
     </div>
