@@ -137,7 +137,7 @@ export const ProjectsSection = () => {
                     alt={project.title}
                     width={800}
                     height={600}
-                    className="object-contain rounded-2xl w-full h-auto mb-4"
+                    className="object-contain rounded-2xl w-full h-auto mb-4 sm:mt-4 mt-0"
                   />
                 </div>
               </div>

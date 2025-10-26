@@ -201,3 +201,48 @@ html {
   scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0a; /* dark background to match black theme */
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #ec4899, #db2777); /* pink gradient */
+  border-radius: 9999px;
+  transition: all 0.3s ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #f472b6, #ec4899);
+}
+
+/* ===== Firefox ===== */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #ec4899 #0a0a0a;
+}
+
+/* ===== Optional: Hide Scrollbar on Mobile ===== */
+@media (max-width: 768px) {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  * {
+    scrollbar-width: none;
+  }
+}
+
+/* ===== Light Mode Variant (Optional Future-Proofing) ===== */
+@media (prefers-color-scheme: light) {
+  ::-webkit-scrollbar-track {
+    background: #f9fafb; /* light gray */
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #ec4899, #f472b6);
+  }
+}
