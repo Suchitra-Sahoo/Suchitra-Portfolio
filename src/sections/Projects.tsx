@@ -61,7 +61,7 @@ const portfolioProjects = [
           "Mobile-first responsive design with Tailwind CSS for fast access across devices",
       },
     ],
-    link: "https://github.com/Suchitra-Sahoo/Smart-Lost-and-Found-System",
+    link: "https://campusfind-nine.vercel.app/",
     image: campusfind,
     github: "https://github.com/Suchitra-Sahoo/Smart-Lost-and-Found-System",
   },
