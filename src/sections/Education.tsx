@@ -9,7 +9,7 @@ import sps from "@/assets/images/sps.png";
 const education = [
   {
     institution: "Guru Tegh Bahadur Institute of Technology (GTBIT)",
-    degree: "B.Tech in Information Technology",
+    degree: "B.Tech in Information Technology (CGPA:9.2)",
     duration: "2022 - 2026",
     location: "New Delhi, India",
     logo: gtbit,
